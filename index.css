@@ -5,6 +5,7 @@ body
    margin-right: 0px;
    margin-top:120px ;
    padding-bottom: 10px;
+   scroll-behavior: smooth;
 }
 
 h1
@@ -15,6 +16,8 @@ h1
   margin-left: 0px;
   margin-right: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
   
 }
 
@@ -27,7 +30,7 @@ h1
   font-weight: bold;
   flex-direction: row;
   border-radius: 4px;
-  
+  padding-top: 0;
   
   position: fixed;
   top:0;
@@ -45,18 +48,20 @@ h1
   background-color: #d3d3d3;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 2px solid black;
+    border: 5px solid;
+
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1;
   margin-bottom: 0px;
 }
 
 .Navigation-links
 {
-border:2px solid black;
+
 padding-left: 8px;
 padding-right: 8px;
 padding-top: 4px;
 padding-bottom: 4px;
-background-color: #fff700;
+
 border-radius: 5px;
 text-decoration: none;
 color: black;
@@ -65,8 +70,8 @@ color: black;
 .church-img{
 
 height: auto;
-margin-top: 10px;
-border: 2px solid black;
+margin-top: 20px;
+border-radius: 5px;
 max-width: 800px;
 width: 100%;
 vertical-align: top;
@@ -90,8 +95,8 @@ border-radius: 5px;
   max-width:960px ;
   flex:1;
   background-color: #d3d3d3;
-  border: 2px solid black;
-  border-radius: 2px;
+  
+  border-radius: 15px;
   margin-left: 5px;
   margin-right: 5px;
     padding-top: 10px;
@@ -125,9 +130,9 @@ border-radius: 5px;
 .frprofile
 {
   
-  border:2px solid black;
+  
   text-align: center;
-  background-color: #87CEEB;
+      
   margin-right: 20px;
   font-weight: bold;
 }
@@ -139,33 +144,86 @@ border-radius: 5px;
   min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
-  border: 2px solid black;
+  border-radius: 15px;
   margin-top: 0px;
   margin-bottom: 0px;
   background-color:#d3d3d3;
+  padding-top: 10px;
 }
 
 footer{
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: black;
+  background-color: #d3d3d3;
+  padding-bottom: 20px;
 }
 
 .footer-box
 {
-  border: 2px solid black;
+  border-radius: 15px;
   flex:1;
   margin-top: 20px ;
-  background-color: #fff700;
+  background-color:  #d3d3d3;
   padding-left: 10px;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   
 }
 
+
+.footer-box1
+{
+  border-radius: 15px;
+  flex:1;
+  margin-top: 20px ;
+  background-color:  #d3d3d3;
+  padding-left: 10px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  border-left: 5px solid;
+
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ;
+
+  border-right: 5px solid;
+
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ;
+  
+  
+}
+
 .message-title
 {
 
-  border: 2px solid black;
+ /* gold color code */
+  border: 5px solid;
+
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1;
+
+
+
+
+  border-radius: 8px; /* optional, makes corners smoother */
+  padding: 20px; /* for content spacing */
+}
+
+.logo-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.church-logo {
+  width: 80px;
+  border-radius: 40px;
+  margin-left: 20px;
+  margin-right: 16px; /* Space between logo and heading */
+  position: static;   /* Remove absolute positioning */
+}
+
+.logo-heading h1 {
+  flex: 1;
+  text-align: center;
+  margin: 0;
 }
