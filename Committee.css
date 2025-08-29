@@ -76,22 +76,24 @@ footer{
 }
 
 .footer-box
-{
+{ display: inline;
   border-radius: 15px;
-  flex:1;
+  white-space:nowrap;
   margin-top: 20px ;
   background-color:  #d3d3d3;
   padding-left: 10px;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
+ 
   
 }
+
 
 
 .footer-box1
 {
   border-radius: 15px;
-  flex:1;
+ 
   margin-top: 20px ;
   background-color:  #d3d3d3;
   padding-left: 10px;
@@ -104,9 +106,9 @@ footer{
   border-right: 5px solid;
 
   border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ;
-  
-  
 }
+
+
 
 
 .main-div
