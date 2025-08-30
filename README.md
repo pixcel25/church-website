@@ -3,8 +3,8 @@ V 1.0.5
 updated it to have a Booking webpage.
 
 currently contains
--home page
--booking page
--comitee page
--contact us section
-- is mobile friendly
+-home page <br>
+-booking page <br>
+-comitee page <br>
+-contact us section<br>
+- is mobile friendly<br>
