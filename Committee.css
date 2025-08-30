@@ -107,7 +107,7 @@ footer{
 
   border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ;
 }
-
+t
 
 
 
@@ -185,4 +185,12 @@ p
 {
   display: flex;
   justify-content: center;
+}
+@media(max-width:500px){
+
+body
+{
+  margin-top: 200px;
+}
+
 }
