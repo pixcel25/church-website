@@ -116,6 +116,8 @@ t
 {
   margin-left: 0px;
   margin-right: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 
@@ -206,4 +208,16 @@ body
   text-align: center;
   margin-top: 0px;
   padding-bottom: 5px;
+}
+
+.feastDate
+{
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.date{
+
+  font-weight: 700;
 }
