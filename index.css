@@ -7,6 +7,11 @@ body
    padding-bottom: 10px;
    scroll-behavior: smooth;
 }
+.main-div-n
+{
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
 h1
 {
@@ -159,6 +164,10 @@ footer{
   background-color: #d3d3d3;
   padding-bottom: 20px;
    align-items: center;
+      margin-left: 20px;
+   margin-right: 20px;
+   border-radius: 20px;
+
 }
 
 .footer-box
