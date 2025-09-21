@@ -80,7 +80,7 @@ border-radius: 5px;
 max-width: 800px;
 width: 100%;
 vertical-align: top;
-border-radius: 5px;
+border-radius: 20px;
 
 }
 
@@ -110,7 +110,13 @@ border-radius: 5px;
   padding-left: 15px;
   padding-right: 15px;
   font-size: 20px;
+  border: 4px solid transparent;
   
+}
+
+.brief-history:hover
+{
+  border: 4px solid #ffd700;
 }
 
 .father-image
