@@ -1,6 +1,6 @@
 body
 {
-   background-color: #ffffff;
+   background-color:#e6f0ff;
    margin-left: 0px;
    margin-right: 0px;
    margin-top:120px ;
@@ -81,7 +81,12 @@ max-width: 800px;
 width: 100%;
 vertical-align: top;
 border-radius: 20px;
+border: 4px solid transparent;
+}
 
+.church-img:hover
+{
+  border: 4PX solid #ffd700;
 }
 
 .church-image
@@ -136,6 +141,10 @@ border-radius: 20px;
   justify-content: center;
   margin-left: 5px;
   margin-right: 5px;
+
+}
+.message-from-father:hover{
+border: 4px solid #ffd700;
 }
 
 .frprofile
@@ -160,6 +169,7 @@ border-radius: 20px;
   margin-bottom: 0px;
   background-color:#d3d3d3;
   padding-top: 10px;
+  border: 4px solid transparent;
  
 }
 
@@ -173,7 +183,13 @@ footer{
       margin-left: 20px;
    margin-right: 20px;
    border-radius: 20px;
+ border: 4px solid transparent;
+}
 
+
+footer:hover
+{
+  border: 4px solid #ffd700;
 }
 
 .footer-box
@@ -212,7 +228,7 @@ footer{
 
 
 .map{
-  margin-top: 30px;
+  
   width:250px;
   border-radius: 20px;
   border: 2px solid #ffd700;
@@ -265,4 +281,21 @@ body
   margin-top: 150px;
 }
 
+}
+
+.mass-time-box
+{
+  text-align: center;
+  background-color: #d3d3d3;
+  border-radius: 10px;
+  margin-left: 17px;
+  margin-right: 17px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 4px solid transparent;
+}
+.mass-time-box:hover
+{
+ border: 4px solid #ffd700;
 }
