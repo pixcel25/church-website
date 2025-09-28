@@ -205,14 +205,14 @@ footer:hover
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
-  min-width: 270px;
+  min-width: 200px;
   
 }
 
 
 .footer-box1
 { 
-   min-width: 270px;
+   min-width: 200px;
   justify-content: center;
   border-radius: 15px;
   flex:1;
