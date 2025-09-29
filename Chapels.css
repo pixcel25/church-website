@@ -155,14 +155,14 @@ footer:hover
   margin-left: 0px;
   margin-right: 0px;
 
-
+}
 
   
 @media(max-width:500px){
 
-bodyz
+.main-div
 {
-  margin-top: 200px;
+margin-top: 180px;
 }
 
 }
