@@ -3,9 +3,11 @@ body
    background-color: #ffffff;
    margin-left: 0px;
    margin-right: 0px;
-   margin-top:250px ;
+   margin-top:120px ;
    padding-bottom: 10px;
    scroll-behavior: smooth;
+   font-family: "comic relief",system-ui;
+   
 }
 
 h1
@@ -15,12 +17,11 @@ h1
   text-align: center;
   margin-left: 0px;
   margin-right: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+ font-family: Arial, Helvetica, sans-serif;
   margin-top: 0px;
   margin-bottom: 0px;
   
 }
-
 
 .Navigation_bar
 {
@@ -68,7 +69,6 @@ color: white;
 }
 
 
-/*8?*/
 
 .logo-heading {
   display: flex;
@@ -187,69 +187,6 @@ color: white;
   
   }
 
-}
-
-
-
-.main-div
-{
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-
-  
-@media(max-width:500px){
-
-body
-{
-  margin-top: 200px;
-}
-
-}
-
-.event-box
-{
-  margin-left: 20px;
-  margin-right: 20px;
-  gap: 30px;
-}
-
-.event-title
-{
-      border: none;
-      background-color: #2f586e;
-  color: white;
-  margin-bottom: 0px;
-  width: max-content;
-  justify-content: stretch;
-  font-size: 26px;
-  padding: 10px;
-}
-
-.event
-{
-  min-width: 250px;
-}
-
-.event-pic{
-  width: 100%;
-  max-width: 400px;
-  border-radius: 20px;
-}
-
-.instagram-media
-{
-  width:10px;
-
-
-}
-.event-box
-{
- display: flex;
- flex-wrap: wrap;
- text-align: center;
- justify-content: center;
 }
 
 /*  footer css begins */

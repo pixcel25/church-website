@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chapels</title>
   <link rel="stylesheet" href="Chapels.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 
       <div class="Navigation_bar"> 
-      <div class="logo-heading">
+            <div class="logo-heading">
+        <img src="pictures/church-logo.jpg" class="church-logo">
         <h1 class="main-title">Mae De Deus Church , Pomburpa</h1>
       </div>
         <div class="link-set">
@@ -117,4 +121,21 @@
 </div>
 
 </body>
+<script>
+let lastScrollTop = 0;
+const logoHeading = document.querySelector('.logo-heading');
+
+window.addEventListener('scroll', function() {
+  let scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+  if (scrollTop > 0) {
+    // Always keep it shrunk unless at the very top
+    logoHeading.classList.add('shrink');
+  } else {
+    // Only expand when at the very top of the page
+    logoHeading.classList.remove('shrink');
+  }
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+</script>
 </html>

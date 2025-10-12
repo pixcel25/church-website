@@ -3,16 +3,17 @@ body
    background-color: #ffffff;
    margin-left: 0px;
    margin-right: 0px;
-   margin-top:120px ;
+   margin-top:250px ;
    padding-bottom: 10px;
    scroll-behavior: smooth;
+   font-family: "comic relief",system-ui;
    
 }
 
 h1
 {
   
-  background-color:   #87CEEB ;
+  background-color:   white ;
   text-align: center;
   margin-left: 0px;
   margin-right: 0px;
@@ -22,10 +23,9 @@ h1
   
 }
 
-
 .Navigation_bar
 {
-  background-color: #87CEEB;
+  background-color: white;
   
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -46,10 +46,11 @@ h1
   justify-content:space-between;
   padding-left: 5px;
   padding-right: 5px;
-  background-color: #d3d3d3;
+  background-color: #0d1f2d;
   padding-top: 10px;
   padding-bottom: 10px;
     border: 5px solid;
+
   border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1;
   margin-bottom: 0px;
 }
@@ -64,22 +65,143 @@ padding-bottom: 4px;
 
 border-radius: 5px;
 text-decoration: none;
-color: black;
+color: white;
 }
 
+
+
+.logo-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;             /* default gap between logo and heading */
+  height: 140px;          /* default height */
+  padding: 15px;          /* default padding */
+  position: relative;
+  overflow: hidden;
+  transition: 
+    height 0.5s ease-in-out, 
+    padding 0.5s ease-in-out, 
+    gap 0.5s ease-in-out; /* add gap to transition */
+}
+
+.church-logo {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: 
+    opacity 0.5s ease-in-out, 
+    width 0.5s ease-in-out, 
+    height 0.5s ease-in-out;
+}
+
+/* Shrinked state on scroll */
+.logo-heading.shrink {
+  height: 60px;           /* smaller height */
+  padding: 5px 10px;      /* reduced padding */
+  gap: 5px;               /* shrink the gap between logo and heading */
+}
+
+.logo-heading.shrink .church-logo {
+  opacity: 0;             /* hide logo */
+  width: 0;
+  height: 0;
+}
+
+
+/* Heading styles */
+.main-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  transition: font-size 0.3s ease;
+}
+
+/* ----------------- Mobile Responsiveness ----------------- */
+@media screen and (max-width: 768px) {
+  .logo-heading {
+    height: 100px;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .logo-heading.shrink {
+    height: 50px;
+    padding: 3px 8px;  /* smaller padding on shrink */
+    gap: 3px;          /* smaller gap on shrink */
+  }
+
+  .church-logo {
+    width: 80px;
+    height: 80px;
+    left: 10px;
+  }
+
+  .main-title {
+    font-size: 1.2rem;
+  }
+  
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .logo-heading {
+    height: 80px;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .logo-heading.shrink {
+    height: 40px;
+    padding: 2px 5px;  /* very compact on shrink */
+    gap: 2px;
+  }
+
+  .church-logo {
+    width: 60px;
+    height: 60px;
+    left: 5px;
+  }
+
+  .main-title {
+    font-size: 1rem;
+  }
+
+  .footer-box1{
+   border-top: 5px solid;
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ; 
+     border-left: 5px solid;
+  border-image: none ;
+  border-right: 5px solid;
+  border-image: none ; 
+    margin-left: 10px;
+    margin-right: 10px;
+  
+  }
+
+}
 /*  footer css begins */
 footer{
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  background-color: #d3d3d3;
+  background-color: #0d1f2d;
   padding-bottom: 20px;
    align-items: center;
       margin-left: 5px;
    margin-right: 5px;
    border-radius: 20px;
  border: 4px solid transparent;
+ color: white;
 }
 
 
@@ -94,15 +216,18 @@ footer:hover
   border-radius: 15px;
   white-space:nowrap;
   margin-top: 20px ;
-  background-color:  #d3d3d3;
+  background-color:  #0d1f2d;
   padding-left: 10px;
   font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+  
   text-align: center;
   min-width: 200px;
   
 }
 
+a{
+  color: white;
+}
 
 .footer-box1
 { 
@@ -111,10 +236,10 @@ footer:hover
   border-radius: 15px;
   flex:1;
   margin-top: 20px ;
-  background-color:  #d3d3d3;
+  background-color:  #0d1f2d;
   
   font-weight: bold;
-  font-family: 'Times New Roman', Times, serif;
+ 
   border-left: 5px solid;
   text-align: center;
   border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ;
@@ -133,7 +258,7 @@ footer:hover
 .mass-time-box
 {
   text-align: center;
-  background-color: #d3d3d3;
+  background-color: #d2973b;
   border-radius: 10px;
   margin-left: 17px;
   margin-right: 17px;
@@ -147,8 +272,6 @@ footer:hover
  border: 4px solid #ffd700;
 }
 /* footer css ends  */
-
-
 
 .main-div
 {
@@ -177,9 +300,10 @@ margin-top: 180px;
 
 .chapel-name
 {
-   border: 5px solid;
-  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; 
-    background-color:   #87CEEB ;
+   border: none;
+
+    background-color: #2f586e;
+    color: white;
   text-align: center;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -188,6 +312,7 @@ margin-top: 180px;
   margin-bottom: 10px;
   font-weight: bold;
   margin-top: 0px;
+  padding: 5px 0px;
  
 }
 
@@ -226,9 +351,10 @@ margin-top: 180px;
 
 .chapel-name2
 {
-   border: 5px solid;
-  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; 
-    background-color:   #87CEEB ;
+   border: 5px solid none;
+ color:white;
+ padding: 10px 0px;
+    background-color:   #2f586e ;
   text-align: center;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -268,7 +394,6 @@ margin-top: 180px;
 .feastDate
 {
   text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 
