@@ -15,7 +15,7 @@
       background-color: #2f586e;
   color: white;
   margin-bottom: 0px;
-  width: max-content;
+  width:100%;
   justify-content: stretch;
   font-size: 26px;
   padding: 10px;
@@ -24,6 +24,7 @@
 .event
 {
   min-width: 250px;
+  max-width: 500px;
 }
 
 .event-pic{
