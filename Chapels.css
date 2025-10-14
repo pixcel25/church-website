@@ -50,10 +50,12 @@
 
 .location-link
 {
-  text-decoration: none;
+  text-decoration: underline;
   font-size:large;
   text-align: center;
-  font-weight: bold;}
+  font-weight: bold;
+  color: purple;
+}
 .link
 {
   text-align: center;
