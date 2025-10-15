@@ -2,43 +2,34 @@
 
 
 
-.event-box
-{
-  margin-left: 20px;
-  margin-right: 20px;
-  gap: 30px;
+.event-box { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: left;
+  align-items: start; /* ensures all events top-aligned */
+  gap: 20px;
+  
 }
 
-.event-title
-{
-      border: none;
-      background-color: #2f586e;
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: auto;
+}
+
+.event-title {
+  background-color: #2f586e;
   color: white;
-  margin-bottom: 0px;
-  width:100%;
-  justify-content: stretch;
-  font-size: 26px;
-  padding: 10px;
-}
-
-.event
-{
-  min-width: 250px;
-  max-width: 500px;
-}
-
-.event-pic{
+  border: none;
+  font-size: 20px;
+  padding: 5px 0px;
   width: 100%;
-  max-width: 400px;
-  border-radius: 20px;
 }
 
-.instagram-media
-{
-  width:10px;
 
 
-}
+
 .event-box
 {
  display: flex;
