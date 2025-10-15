@@ -28,7 +28,7 @@ h1
 }
 
 
-.Navigation_bar
+.Navigation-bar
 {
   background-color: white;
   
@@ -307,4 +307,44 @@ body
   margin-top: 220px;
 }
 
+}.hamburger {
+  display: none;
+  padding: 5px 10px;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.hamSection {
+  position: relative;
+}
+
+.hamLinks {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: 100%; /* directly below hamburger */
+  left: 0;
+  background-color: #f0f0f0;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.hamLinks a {
+  color: #0d1f2d;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.hamLinks a:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+
+  .Navigation-links {
+    display: none;
+  }
 }
