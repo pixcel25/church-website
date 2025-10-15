@@ -174,19 +174,22 @@ window.addEventListener('scroll', function() {
   lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
 });
 
-
 const hamburger = document.getElementById('hamburger');
 const hamLinks = document.querySelector('.hamLinks');
+let isOpen = false;
 
 hamburger.addEventListener('click', () => {
-  hamLinks.style.display = hamLinks.style.display === 'flex' ? 'none' : 'flex';
+  isOpen = !isOpen;
+  hamLinks.style.display = isOpen ? 'flex' : 'none';
 });
 
-
-
-
-
-
+// 👇 Close dropdown if user resizes to desktop view
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 800) {
+    hamLinks.style.display = 'none'; // hide menu
+    isOpen = false; // reset toggle state
+  }
+});
 
 
 

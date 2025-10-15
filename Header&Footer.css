@@ -348,3 +348,10 @@ body
     display: none;
   }
 }
+
+@media (min-width: 900px) {
+  .hamLinks {
+    display: none;
+  }
+
+}
