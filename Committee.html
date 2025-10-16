@@ -8,24 +8,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
+   <div class="Navigation-bar"> 
+  <div class="logo-heading">
+    <img src="pictures/church-logo.jpg" class="church-logo">
+    <h1 class="main-title">Mother of God Church, Pomburpa</h1>
+  </div>
 
-<link rel="stylesheet" href="Header&Footer.css">
-</head>
-<body>
-       <div class="Navigation_bar"> 
-      <div class="logo-heading">
-        <img src="pictures/church-logo.jpg" class="church-logo">
-        <h1 class="main-title">Mae De Deus Church , Pomburpa</h1>
+  <div class="link-set" id="nav-links"> 
+    <a class="Navigation-links" href="index.html">Home</a>
+    <a class="Navigation-links" href="Committee.html">Committees</a>
+    <a class="Navigation-links" href="Gallery.html">Gallery</a>
+    <a class="Navigation-links" href="Chapels.html">Chapels</a>
+    <a class="Navigation-links" href="History.html">History</a>
+    <a class="Navigation-links" href="booking.html">Booking</a>
+    <a class="Navigation-links" href="#section1">Contact us</a>
+
+    <div class="hamSection">
+      <div class="hamburger" id="hamburger">&#9776;</div> 
+      <div class="hamLinks" id="hamLinks">
+        <a class="hNavigation-links" href="index.html">Home</a>
+        <a class="hNavigation-links" href="Committee.html">Committees</a>
+        <a class="hNavigation-links" href="Gallery.html">Gallery</a>
+        <a class="hNavigation-links" href="Chapels.html">Chapels</a>
+        <a class="hNavigation-links" href="History.html">History</a>
+        <a class="hNavigation-links" href="booking.html">Booking</a>
+        <a class="hNavigation-links" href="#section1">Contact us</a>
       </div>
-        <div class="link-set">
-        <a class="Navigation-links" href="index.html">Home</a>
-        <a class="Navigation-links" >Committees</a>
-        <a class="Navigation-links" href="Gallery.html">Gallery</a>
-        <a class="Navigation-links" href="Chapels.html">Chapels</a>
-        <a class="Navigation-links"  href="History.html">History</a>
-        <a class="Navigation-links" href="Booking.html">Booking</a>
-        <a class="Navigation-links" href="#section1">Contact us</a></div>
     </div>
+  </div>
+</div>
 
 
 <div class="main-div">
@@ -185,21 +196,7 @@
 </div>
 
 </body>
-<script>
-  let lastScrollTop = 0;
-const logoHeading = document.querySelector('.logo-heading');
+<script src="file.js">
 
-window.addEventListener('scroll', function() {
-  let scrollTop = window.scrollY || document.documentElement.scrollTop;
-
-  if (scrollTop > 0) {
-    // Always keep it shrunk unless at the very top
-    logoHeading.classList.add('shrink');
-  } else {
-    // Only expand when at the very top of the page
-    logoHeading.classList.remove('shrink');
-  }
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-});
 </script>
 </html>
