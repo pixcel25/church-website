@@ -1,0 +1,67 @@
+
+
+.mainContents
+{
+  background-color: #0d1f2d;
+  padding: 20px 10px;
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 10px;
+  place-items: center;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+.title
+{
+  display: block;
+  background-color: #2f586e;
+  text-align: center;
+}
+
+.h1{
+  background-color: #2f586e;
+  color: black;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+
+
+
+.profilePic
+{
+  width: 150px;
+  height:auto;
+  display:inline;
+  border-radius: 10px;
+}
+
+
+.priest-div
+{
+
+width: 250px;
+min-height: 250px;
+border-radius: 10px;
+background-color:#e8ca82 ;
+text-align: center;
+padding: 10px ;
+margin: 10px;
+
+}
+
+.details
+{
+  display: inline;
+  margin: 0px;
+}
+
+.location
+{
+  color: rgb(43, 42, 42);
+}
+
+.name
+{
+  font-weight: bold;
+}
