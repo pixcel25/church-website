@@ -118,21 +118,5 @@ header {
   transform: translateY(-2px); /* gentle upward shift */
 }
 
-.hamSection {
-  display: flex;
-  align-items: center;
-}
 
-.hamLinks {
-  display: none;
-  flex-direction: column;
-  gap: 10px;
-  background: white;
-  position: absolute;
-  top: 60px; /* leave room for header */
-  right: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 10px;
-  z-index: 999;
-}
+

@@ -73,51 +73,47 @@ text-decoration: none;
 color: white;
 }
 
-
-
 .logo-heading {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* left logo, center text, right spacer */
   align-items: center;
-  justify-content: center;
-  gap: 20px;             /* default gap between logo and heading */
-  height: 140px;          /* default height */
-  padding: 15px;          /* default padding */
-  position: relative;
-  overflow: hidden;
-  transition: 
-    height 0.5s ease-in-out, 
-    padding 0.5s ease-in-out, 
-    gap 0.5s ease-in-out; /* add gap to transition */
+  height: 140px;
+  padding: 15px;
+  transition:
+    height 0.5s ease-in-out,
+    padding 0.5s ease-in-out;
 }
 
 .church-logo {
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  justify-self: start;   /* stick to the left */
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
-  transition: 
-    opacity 0.5s ease-in-out, 
-    width 0.5s ease-in-out, 
+  transition:
+    opacity 0.5s ease-in-out,
+    width 0.5s ease-in-out,
     height 0.5s ease-in-out;
 }
 
-/* Shrinked state on scroll */
+.main-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  transition: font-size 0.3s ease;
+}
+
+/* Shrinked state */
 .logo-heading.shrink {
-  height: 60px;           /* smaller height */
-  padding: 5px 10px;      /* reduced padding */
-  gap: 5px;               /* shrink the gap between logo and heading */
+  height: 60px;
+  padding: 5px 10px;
 }
 
 .logo-heading.shrink .church-logo {
-  opacity: 0;             /* hide logo */
+  opacity: 0;
   width: 0;
   height: 0;
 }
-
 
 /* Heading styles */
 .main-title {
@@ -172,7 +168,7 @@ color: white;
 }
 
 /* Mobile */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .logo-heading {
     height: 80px;
     padding: 10px;
