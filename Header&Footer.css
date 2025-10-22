@@ -502,6 +502,22 @@ margin: 10px;
 {
   font-weight: bold;
 }
+
+.oldpics
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.churchImageOld
+{
+  max-height: 400px;
+  width: auto;
+}
+
+
 /* history end  */
 
 
