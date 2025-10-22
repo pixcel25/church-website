@@ -11,11 +11,12 @@ currently contains
 -contact us section<br>
 - is mobile friendly<br>
  
- V 1.1.0
+ V 1.8.0
 
- -Improved footer <br>
- -Made mobile version visually appealing<br>
- -Updated comitees section <br>
- -Fixed hall Layout
- -Added 4th section with  social/map/social/contact us 
+ -Improved and NEW UI <br>
+ -all placeholders have been replaced<br>
+ -almost all commitees have been added <br>
+ - embedded insta reels <br>
+ -colapsible header with hamburger menu for mobile added <br> 
 
+last updated on 22/10/25 .
