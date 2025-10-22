@@ -43,7 +43,7 @@ border: 4px solid transparent;
   margin-right: 5px;
     padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: 500;
+  font-weight: 400;
   padding-left: 15px;
   padding-right: 15px;
   font-size: 20px;
@@ -107,6 +107,7 @@ border: 4px solid #ffd700;
   padding-top: 10px;
   border: 4px solid transparent;
   background-color: #e8c882;
+  font-weight: 400;
 }
 
 
@@ -348,6 +349,7 @@ p
   border-radius: 20px;
   max-width: 400px;
   border: 4px solid  transparent;
+  max-height: 500px;
 }
 
 
@@ -395,14 +397,6 @@ p
   
 }
 
-.chapel-pic2
-{
-  width: 100%;
-  border-radius: 20px;
-  max-width: 400px;
-  margin-bottom: 0px;
-  border: 4px solid  transparent;
-}
 
 
 .chapel-pic2:hover
@@ -430,17 +424,7 @@ p
   font-weight: 700;
 }
 
-.text-box
-{
-  border-radius: 20px;
-  background-color: #87CEEB;
-  border: 4px solid transparent;
-}
 
-.text-box:hover
-{
-    border: 4px solid #ffd700;
-}
 /*  chapel end */
 
 
@@ -576,12 +560,16 @@ margin: 10px;
   padding: 10px;
   border-radius: 20px;
   margin: 5px;
- 
-  font-weight: 500;
+  
+  font-size: 20px;
   margin-bottom: 30px;
   border: 4px solid transparent;
-  margin-left: 10px;
-  margin-right: 10px;
+
+}
+
+
+p{
+  font-weight: 400;
 }
 
 .text-box:hover
