@@ -514,7 +514,8 @@ margin: 10px;
 .churchImageOld
 {
   max-height: 400px;
-  width: auto;
+  width:auto;
+  height: 100%;
 }
 
 
