@@ -1,0 +1,545 @@
+/* Index CSS starts here */
+
+
+
+
+.church-img{
+
+height: auto;
+margin-top: 20px;
+border-radius: 5px;
+max-width: 800px;
+width: 100%;
+vertical-align: top;
+border-radius: 20px;
+border: 4px solid transparent;
+}
+
+.church-img:hover
+{
+  border: 4PX solid #ffd700;
+}
+
+.church-image
+{
+  gap:10px;
+  display: flex;
+  flex-wrap: wrap;
+ 
+  justify-content: center;
+  }
+  
+
+
+
+.father-image
+{
+  border-radius: 20px;
+  margin-top: 10px;
+  border:2px solid black;
+  max-height: 200px;
+}
+
+.message-ParishPriest
+{
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  gap: 10px;
+  justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+.text-box:hover{
+border: 4px solid #ffd700;
+}
+
+.frprofile
+{
+  
+  max-height: 300px;
+  text-align: center;
+  border: 5px solid transparent; 
+  border-radius: 15px;
+  background-color: #d2973b;  
+  margin-right: 20px;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+}
+
+
+
+
+.blueheader
+{
+
+ 
+  border: none;
+  background-color: #2f586e;
+  color: white;
+  padding: 20px; /* for content spacing */
+}
+
+.logo-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cr4 {
+  
+  
+  width:100px;
+  height: 93px;
+  position: fixed;
+  top:0px;
+}
+
+.logo-heading h1 {
+  flex: 1;
+  text-align: center;
+  
+  margin: 0;
+}
+
+.main-title {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    flex: 1;
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .main-title {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Index CSS ends here */
+
+
+
+
+
+/* comittee css starts here */
+
+
+.committee-box
+{
+  text-align: center;
+}
+
+.committee-name
+{
+  
+  background-color:   #2f586e ;
+  text-align: center;
+    /* margin-top: 0px; 
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;*/
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 30px;
+    border: none;
+ margin-left: auto;
+ margin-right: auto;
+ max-width: 800px;
+ padding-left: 10px;
+ padding-right: 10px;
+ padding: 10px 20px;
+ color: white;
+ font-weight: 900;
+margin-bottom: 10px;
+}
+
+.group-pic
+{
+  width: 100%;
+  max-width: 550px;
+  border-radius: 10px;
+  margin: 0px;
+  border: 4px solid transparent;
+}
+
+.group-comittee
+{
+ text-align: center;
+ 
+}
+
+
+.group-pic:hover{
+  border: 4px solid #ffd700;
+}
+
+
+
+
+
+
+
+
+.member-pic
+{
+  width: 150px;
+  border-radius: 15px;
+ height: 210px;
+}
+
+.main-members-box
+{
+  display:flex;
+  flex-wrap: wrap;
+ justify-content: center;
+  gap:15px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-right: 0px;
+  
+}
+
+.member-box{
+  background-color: #e8ca82;
+  margin-top: 10px;
+  border: 4px solid transparent;
+  margin-bottom: 10px;
+  padding: 10px 10px 0px 10px;
+  border-radius: 8px;
+  transition: transform 0.4s ease;
+}
+
+.member-box:hover,.member-box:active{
+   border: 4px solid #ffd700;
+   transform: scale(1.1);
+}
+
+
+
+
+/* comiteee ends here  */
+
+
+
+/* gallery start */
+
+
+
+
+
+.event-box { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: left;
+  align-items: start; /* ensures all events top-aligned */
+  gap: 20px;
+  
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  margin: auto;
+}
+
+.event-title {
+  background-color: #2f586e;
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 5px 0px;
+  width: 100%;
+}
+
+
+
+
+.event-box
+{
+ display: flex;
+ flex-wrap: wrap;
+ text-align: center;
+ justify-content: center;
+}
+
+/* gallery end */
+
+/* chapel start  */
+
+
+.all-chapel-main-box
+{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.chapel-name
+{
+   border: none;
+
+    background-color: #2f586e;
+    color: white;
+  text-align: center;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  max-width: 390px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-top: 0px;
+  padding: 5px 0px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+.chapel-pic
+{
+  width: 100%;
+  border-radius: 20px;
+  max-width: 380px;
+  border: 4px solid  transparent;
+  max-height: 500px;
+}
+
+
+.chapel-pic:hover
+{
+  border: 4px solid  #ffd700;
+}
+
+
+
+
+.chapel-box{
+  max-width: 400px;
+  width :100%;
+}
+
+.location-link
+{
+  text-decoration: underline;
+  font-size:large;
+  text-align: center;
+  font-weight: bold;
+  color: purple;
+}
+.link
+{
+  text-align: center;
+}
+
+.chapel-name2
+{
+   border: 5px solid none;
+ color:white;
+ padding: 10px 0px;
+    background-color:   #2f586e ;
+  text-align: center;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  max-width: 380px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  
+}
+
+
+
+
+
+.link2
+{
+  text-align: center;
+  margin-top: 0px;
+  padding-bottom: 5px;
+}
+
+.feastDate
+{
+  text-align: center;
+
+}
+
+.date{
+
+  font-weight: 700;
+}
+
+
+/*  chapel end */
+
+
+
+
+/* history start */
+
+
+.mainContents
+{
+  background-color: #0d1f2d;
+  padding: 50px 10px;
+  display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 10px;
+  place-items: center;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+
+.h1{
+  background-color: #2f586e;
+  color: black;
+  padding: 10px 0px;
+  margin-top: 10px;
+}
+
+
+
+.profilePic
+{
+  width: 150px;
+  height:auto;
+  display:inline;
+  border-radius: 10px;
+}
+
+
+.priest-div
+{
+
+width: 250px;
+min-height: 250px;
+border-radius: 5px;
+background-color:#e8ca82 ;
+text-align: center;
+padding: 10px ;
+margin: 10px;
+transition: transform 0.4s ease;
+}
+
+
+.priest-div:active,.priest-div:hover
+{
+ transform: scale(1.2);
+}
+
+
+
+
+.details
+{
+  display: inline;
+  margin: 0px;
+}
+
+.location
+{
+  color: rgb(43, 42, 42);
+}
+
+.name
+{
+  font-weight: bold;
+}
+
+.oldpics
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.churchImageOld
+{
+  max-height: 400px;
+  width:auto;
+  height: 100%;
+  transition: transform 0.3s ease-in;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.churchImageOld:hover,.church-img:active
+{
+  transform: scale(1.1);
+}
+
+
+
+/* history end  */
+
+
+
+
+
+/* booking start */
+
+.pic-gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.hallpic {
+  max-width: 400px;  /* Adjust image size */
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 3px solid transparent;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+
+
+.hallpic:hover
+{
+  border: 4px solid #ffd700;
+}
+
+
+
+
+
+
+
+
+/* booking end */
+
+
+
+
