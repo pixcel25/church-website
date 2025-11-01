@@ -72,58 +72,6 @@ border: 4px solid #ffd700;
 
 
 
-.blueheader
-{
-
- 
-  border: none;
-  background-color: #2f586e;
-  color: white;
-  padding: 20px; /* for content spacing */
-}
-
-.logo-heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.cr4 {
-  
-  
-  width:100px;
-  height: 93px;
-  position: fixed;
-  top:0px;
-}
-
-.logo-heading h1 {
-  flex: 1;
-  text-align: center;
-  
-  margin: 0;
-}
-
-.main-title {
-    color: black;
-    font-size: 28px;
-    text-align: center;
-    margin: 0;
-    flex: 1;
-    padding: 10px;
-}
-
-@media screen and (max-width: 480px) {
-    .main-title {
-        font-size: 20px;
-        padding: 5px;
-    }
-}
-
-
-
-
 
 
 
@@ -423,6 +371,18 @@ margin-bottom: 10px;
   padding: 10px 0px;
   margin-top: 10px;
 }
+
+
+.htitle
+{
+
+ 
+  border: none;
+  background-color: #2f586e;
+  color: white;
+  padding: 20px; /* for content spacing */
+}
+
 
 
 

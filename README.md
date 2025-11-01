@@ -20,3 +20,10 @@ currently contains
  -colapsible header with hamburger menu for mobile added <br> 
 
 last updated on 22/10/25 .
+
+
+V.1.9.0
+
+- added scale animation for elements <br>
+-common code has been seperated and UI is made consistent <br>
+- files renamed for better structure <br>
