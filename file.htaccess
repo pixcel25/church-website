@@ -1,1 +1,2 @@
-file
+DirectoryIndex home.html
+Redirect /index.html /home.html
