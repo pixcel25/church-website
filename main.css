@@ -376,7 +376,7 @@ margin-bottom: 10px;
 .htitle
 {
 
- 
+  margin-bottom: 20px;
   border: none;
   background-color: #2f586e;
   color: white;
@@ -398,7 +398,8 @@ margin-bottom: 10px;
 .priest-div
 {
 
-width: 250px;
+max-width: 250px;
+width: 100%;
 min-height: 250px;
 border-radius: 5px;
 background-color:#e8ca82 ;
@@ -412,8 +413,8 @@ border: 8px solid transparent;
 
 .priest-div:active,.priest-div:hover
 {
- transform: scale(1.2);
- border-color: white;
+ transform: scale(1.08);
+ border-color: #ffd700;
 }
 
 
@@ -445,9 +446,9 @@ border: 8px solid transparent;
 
 .churchImageOld
 {
-  max-height: 400px;
-  width:auto;
-  height: 100%;
+  max-width: 400px;
+  height:auto;
+  width: 100%;
   transition: transform 0.3s ease-in;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
