@@ -433,6 +433,35 @@ margin-bottom: 10px;
   border-radius: 10px;
 }
 
+.pope-chair-div
+{
+  display: flex;
+  flex-wrap: wrap;
+  padding:  15px 10px ;
+  justify-content: center;
+  gap: 10px;
+}
+
+.chair-pic
+{
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px ;
+  border: 4px solid transparent;
+  transition: transform 0.4s ease;
+}
+
+.chair-pic:hover , .chair-pic:active
+{
+  border-color: #ffd700;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
 
 .priest-div
 {
