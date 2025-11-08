@@ -32,3 +32,17 @@ window.addEventListener('resize', () => {
 });
 
 
+
+
+
+
+const credits = `
+credits
+Programmed by : Rylan Franco
+Coloring,hosting and consulting : Gleena
+pictures : andrew , princeton , siyanda and others
+special thanks to : brother Aaron , Kenny
+history information : sebiola
+`;
+
+console.log(credits);
