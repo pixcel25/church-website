@@ -574,3 +574,429 @@ border: 4px solid transparent;
 
 
 
+/* common css header footer and the rest */
+
+.text-box
+{
+  flex:1;
+  font-size: 25px;
+  min-width: 320px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 15px;
+ margin: 10px 10px;
+  background-color:#d3d3d3;
+  padding-top: 10px;
+  border: 4px solid transparent;
+  background-color: #e8c882;
+  font-weight: 400;
+}
+
+.text-box:hover{
+border: 4px solid #ffd700;
+}
+
+
+
+.blueheader
+{
+
+ 
+  border: none;
+  background-color: #2f586e;
+  color: white;
+  padding: 20px; /* for content spacing */
+}
+
+
+
+
+body
+{
+   background-color:#e6f0ff;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top:250px ;
+   padding-bottom: 10px;
+   scroll-behavior: smooth;
+   font-family: "Montserrat";
+}
+.main-div-n
+{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h1
+{
+  
+  background-color:   white ;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  
+}
+
+
+.Navigation-bar
+{
+  background-color: white;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  flex-direction: row;
+  border-radius: 4px;
+  padding-top: 0;
+  z-index: 1000;
+  position: fixed;
+  top:0;
+  width: 100%;
+ 
+}
+
+.link-set
+{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: #0d1f2d;
+  padding-top: 10px;
+  padding-bottom: 10px;
+    border: 5px solid;
+
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1;
+  margin-bottom: 0px;
+}
+
+.Navigation-links
+{
+
+padding-left: 8px;
+padding-right: 8px;
+padding-top: 4px;
+padding-bottom: 4px;
+
+border-radius: 5px;
+text-decoration: none;
+color: white;
+}
+
+.logo-heading {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* left logo, center text, right spacer */
+  align-items: center;
+  height: 140px;
+  padding: 15px;
+  transition:
+    height 0.5s ease-in-out,
+    padding 0.5s ease-in-out;
+}
+
+.church-logo {
+  justify-self: start;   /* stick to the left */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition:
+    opacity 0.5s ease-in-out,
+    width 0.5s ease-in-out,
+    height 0.5s ease-in-out;
+}
+
+.main-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  transition: font-size 0.3s ease;
+}
+
+/* Shrinked state */
+.logo-heading.shrink {
+  height: 60px;
+  padding: 5px 10px;
+}
+
+.logo-heading.shrink .church-logo {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Heading styles */
+.main-title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  transition: font-size 0.3s ease;
+}
+
+
+
+
+
+
+.logo-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.cr4 {
+  
+  
+  width:100px;
+  height: 93px;
+  position: fixed;
+  top:0px;
+}
+
+.logo-heading h1 {
+  flex: 1;
+  text-align: center;
+  
+  margin: 0;
+}
+
+.main-title {
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    margin: 0;
+    flex: 1;
+    padding: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .main-title {
+        font-size: 20px;
+        padding: 5px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------- Mobile Responsiveness ----------------- */
+@media screen and (max-width: 768px) {
+  .logo-heading {
+    height: 100px;
+    padding: 15px;
+    gap: 10px;
+  }
+
+  .logo-heading.shrink {
+    height: 50px;
+    padding: 3px 8px;  /* smaller padding on shrink */
+    gap: 3px;          /* smaller gap on shrink */
+  }
+
+  .church-logo {
+    width: 80px;
+    height: 80px;
+    left: 10px;
+  }
+
+  .main-title {
+    font-size: 1.2rem;
+  }
+  
+}
+
+/* Mobile */
+@media screen and (max-width: 650px) {
+  .logo-heading {
+    height: 80px;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .logo-heading.shrink {
+    height: 40px;
+    padding: 2px 5px;  /* very compact on shrink */
+    gap: 2px;
+  }
+
+  .church-logo {
+    width: 60px;
+    height: 60px;
+    left: 5px;
+  }
+
+  .main-title {
+    font-size: 1rem;
+  }
+
+  .footer-box1{
+   border-top: 5px solid;
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ;
+  border-bottom: 5px solid;
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ; 
+     border-left: 5px solid;
+  border-image: none ;
+  border-right: 5px solid;
+  border-image: none ; 
+    margin-left: 10px;
+    margin-right: 10px;
+  
+  }
+
+}
+
+
+
+
+/*  footer css begins */
+footer{
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background-color: #0d1f2d;
+  padding-bottom: 20px;
+   align-items: center;
+      margin-left: 5px;
+   margin-right: 5px;
+   border-radius: 20px;
+ border: 4px solid transparent;
+ color: white;
+}
+
+
+footer:hover
+{
+  border: 4px solid #ffd700;
+}
+
+.footer-box
+{ 
+  flex:1;
+  border-radius: 15px;
+  white-space:nowrap;
+  margin-top: 20px ;
+  background-color:  #0d1f2d;
+  padding-left: 10px;
+  font-weight: bold;
+  
+  text-align: center;
+  min-width: 200px;
+  
+}
+
+a{
+  color: white;
+}
+
+.footer-box1
+{ 
+   min-width: 270px;
+  justify-content: center;
+  border-radius: 15px;
+  flex:1;
+  margin-top: 20px ;
+  background-color:  #0d1f2d;
+  
+  font-weight: bold;
+ 
+  border-left: 5px solid;
+  text-align: center;
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ;
+  border-right: 5px solid;
+  border-image: linear-gradient(45deg, #d4af37, #ffd700, #b8860b, #ffd700, #d4af37) 1; ;
+}
+
+
+.map{
+  
+  width:250px;
+  border-radius: 20px;
+  border: 2px solid #ffd700;
+}
+
+.mass-time-box
+{
+  text-align: center;
+  background-color: #d2973b;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 4px solid transparent;
+}
+.mass-time-box:hover
+{
+ border: 4px solid #ffd700;
+}
+/* footer css ends  */
+
+/* Mobile view */
+@media(max-width:800px){
+
+body
+{
+  margin-top: 180px;
+}
+
+}
+.hamburger {
+  display: none;
+  padding: 5px 10px;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+
+.hamSection {
+  position: relative;
+}
+
+.hamLinks {
+  display: none; /* hidden by default */
+  position: absolute;
+  top: 100%; /* directly below hamburger */
+  left: 0;
+  background-color: #f0f0f0;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.hamLinks a {
+  color: #0d1f2d;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+.hamLinks a:hover {
+  background-color: #ddd;
+}
+
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+
+  .Navigation-links {
+    display: none;
+  }
+}
