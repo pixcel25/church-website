@@ -1,44 +1,44 @@
 /* home CSS starts here */
 
 
-.dyc-div
-{
-  display: flex;
-  background-color: white;
-  padding: 20px 15px;
-  border: 2px solid black;
-  border-radius: 5px;
-  margin: 10px 0px;
-}
-
-.dyc-logo-div
-{
-  max-width: fit-content;
-  max-width: 0px;
-  padding: 0px;
-  background-color: #0d1f2d;
-}
-
-.dyc-logo
-{
-  max-width: 50%;
-  background-color: white;
-}
-
-.dyc-message
-{
-    font-size: clamp(1.5rem, 2vw, 3rem);
+.dyc-div {
   display: flex;
   align-items: center;
-  background-color: #d2973b;
-  margin-left: auto;
-  margin-right: auto;
-  flex: 1;
+  background-color: white;
+  padding: 20px 15px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  margin: 10px 0px;
+  gap: 15px;
 }
 
-.dyc-text
-{
+.dyc-logo-div {
+  aspect-ratio: 1 / 1;
+  width: 80px;              /* Adjust size if needed */
+  overflow: hidden;
+  background-color: #0d1f2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dyc-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dyc-message {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ;
+}
+
+.dyc-text {
   text-align: center;
+  font-size: clamp(1.5rem, 4vw, 3rem); /* auto resize ✅ */
 }
 
 
