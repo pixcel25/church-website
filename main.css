@@ -1,6 +1,45 @@
 /* home CSS starts here */
 
 
+.dyc-div
+{
+  display: flex;
+  background-color: white;
+  padding: 20px 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 10px 0px;
+}
+
+.dyc-logo-div
+{
+  max-width: fit-content;
+  max-width: 0px;
+  padding: 0px;
+  background-color: #0d1f2d;
+}
+
+.dyc-logo
+{
+  max-width: 50%;
+  background-color: white;
+}
+
+.dyc-message
+{
+    font-size: clamp(1.5rem, 2vw, 3rem);
+  display: flex;
+  align-items: center;
+  background-color: #d2973b;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+}
+
+.dyc-text
+{
+  text-align: center;
+}
 
 
 .church-img{
@@ -448,7 +487,7 @@ border: 8px solid transparent;
 {
   max-width: 400px;
   height:auto;
-  width: 100%;
+  width: 80%;
   transition: transform 0.3s ease-in;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
