@@ -27,3 +27,6 @@ V.1.9.0
 - added scale animation for elements <br>
 -common code has been seperated and UI is made consistent <br>
 - files renamed for better structure <br>
+
+
+V1.2.0

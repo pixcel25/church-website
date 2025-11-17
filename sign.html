@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Church Sign Up</title>
+
+<style>
+
+/* Page background */
+body {
+  background-color: #e6f0ff;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Center box */
+.signup-box {
+  width: 95%;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 15px;
+  border: 4px solid transparent;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.signup-title {
+  background-color: #2f586e;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 0 0 20px 0;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+}
+
+/* Inputs fitted inside box */
+.form-input {
+  width: 100%;
+  font-size: 18px;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 4px solid transparent;
+  background-color: #e8c882;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.form-input:hover,
+.form-input:focus {
+  border: 4px solid #ffd700;
+  outline: none;
+}
+
+/* Button */
+.submit-btn {
+  width: 100%;
+  background-color: #d2973b;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 4px solid transparent;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  border: 4px solid #ffd700;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="signup-box">
+
+  <h2 class="signup-title">Church Website – Sign Up</h2>
+
+  <form action="login.html" method="GET">
+
+    <input type="text" class="form-input" placeholder="Full Name" required>
+
+    <input type="email" class="form-input" placeholder="Email Address" required>
+
+    <input type="password" class="form-input" placeholder="Create Password" required>
+
+    <input type="password" class="form-input" placeholder="Confirm Password" required>
+
+    <input type="text" class="form-input" placeholder="Mobile Number" required>
+
+    <select class="form-input" required>
+      <option value="">Select Parish</option>
+      <option>Pomburpa</option>
+      <option>Aldona</option>
+      <option>Bastora</option>
+      <option>Other</option>
+    </select>
+
+    <textarea class="form-input" placeholder="Address" rows="3" required></textarea>
+
+    <button type="submit" class="submit-btn">Create Account</button>
+
+  </form>
+
+</div>
+
+</body>
+</html>

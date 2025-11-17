@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            background-color: #e6f0ff; /* matches home.css */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #e8ce82;
+            padding: 30px;
+            width: 350px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            border: 4px solid transparent;
+            transition: 0.3s;
+        }
+
+        .container:hover {
+            border-color: #ffd700; /* gold hover border */
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #0d1f2d; /* dark navy heading */
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 2px solid #2f586e; /* blue border */
+            font-size: 15px;
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #ffd700; /* gold highlight */
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #2f586e; /* blue button */
+            color: white;
+            border-radius: 8px;
+            border: none;
+            font-size: 17px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0d1f2d; /* dark navy */
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 12px;
+            font-size: 14px;
+            color: #0d1f2d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+
+        <form onsubmit="window.location.href='home.html'; return false;">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+
+            <button type="submit">Login</button>
+
+            <a href="sign.html">Don't have an account? Sign Up</a>
+        </form>
+    </div>
+
+</body>
+</html>
