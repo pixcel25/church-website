@@ -27,10 +27,11 @@
 
 .dyc-message
 {
-    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-size: clamp(30px , 80% , 50px);
   display: flex;
   align-items: center;
-  background-color: #d2973b;
+  justify-content: center;
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
   flex: 1;
@@ -39,6 +40,7 @@
 .dyc-text
 {
   text-align: center;
+  background-color: white;
 }
 
 
@@ -109,13 +111,32 @@ border: 4px solid #ffd700;
 }
 
 
+.novena-div
+{
+padding: 20px;
+display: flex;
+justify-content: center;
+}
+
+.novena-div iframe
+{
+  flex: 1;
+  max-width: 900px;
+ border-radius: 10px;
+ height: 500px;
+}
 
 
+@media (max-width:500px) {
+  .novena-div iframe
+{
+ 
+ 
+ height: 250px;
+}
 
-
-
-
-
+  
+}
 
 
 /* home CSS ends here */
