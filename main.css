@@ -199,12 +199,7 @@ margin-bottom: 10px;
 
 
 
-.member-pic
-{
-  width: 150px;
-  border-radius: 2px;
- height: 210px;
-}
+
 
 .main-members-box
 {
@@ -226,6 +221,13 @@ margin-bottom: 10px;
   padding: 10px 10px 0px 10px;
   border-radius: 12px;
   transition: transform 0.4s ease;
+
+  img
+  {
+    width: 150px;
+  border-radius: 2px;
+ height: 210px;
+  }
 }
 
 .member-box:hover,.member-box:active{
@@ -236,7 +238,7 @@ margin-bottom: 10px;
 
 
 
-/* comiteee ends here  */
+/* comittee ends here  */
 
 
 
