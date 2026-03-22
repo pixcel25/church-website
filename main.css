@@ -4,54 +4,33 @@
   --padding : 8px;
 }
 
-
-
-
 /* home CSS starts here */
-
 
 .dyc-div
 {
   display: flex;
   background-color: white;
   padding: 20px 15px;
-  border: 2px solid black;
   border-radius: var(--borderRadius);
   margin: 10px 0px;
 }
 
 .dyc-logo-div
-{
-  max-width: fit-content;
-  max-width: 0px;
-  padding: 0px;
-  background-color: #0d1f2d;
-}
+{ max-width: fit-content; }
 
 .dyc-logo
-{
-  max-width: 50%;
-  background-color: white;
-}
+{ max-width: 50%; }
 
 .dyc-message
 {
-    font-size: clamp(30px , 80% , 50px);
+  font-size: clamp(30px , 80% , 50px);
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
-  margin-left: auto;
-  margin-right: auto;
+  margin : 0px auto;
   flex: 1;
 }
-
-.dyc-text
-{
-  text-align: center;
-  background-color: white;
-}
-
 
 .church-img{
 
@@ -60,14 +39,7 @@ margin-top: 20px;
 border-radius: var(--borderRadius);
 max-width: 800px;
 width: 100%;
-vertical-align: top;
-border-radius: 20px;
 border: 4px solid transparent;
-}
-
-.church-img:hover
-{
-  border: 4PX solid #ffd700;
 }
 
 .church-image
@@ -75,13 +47,10 @@ border: 4px solid transparent;
   gap:10px;
   display: flex;
   flex-wrap: wrap;
- 
+  align-items: center;
   justify-content: stretch;
   }
   
-
-
-
 .father-image
 {
   border-radius: var(--borderRadius);
@@ -92,79 +61,59 @@ border: 4px solid transparent;
 
 .message-ParishPriest
 {
-  
   display: flex;
   flex-wrap: wrap;
-  margin-top: 15px;
+  margin-top: 15px 5px 0px 5px;
   gap: 10px;
   justify-content: center;
-  margin-left: 5px;
-  margin-right: 5px;
-
+  padding: var(--padding);
 }
-.text-box:hover{
-border: 4px solid #ffd700;
+.text-box:hover,.church-img:hover{
+border-color:  #ffd700;
 }
 
 .frprofile
 {
-  
-  max-height: 300px;
+  max-height: 280px;
   text-align: center;
   border: 5px solid transparent; 
   border-radius: var(--borderRadius);
   background-color: #d2973b;  
-  margin-right: 20px;
   font-weight: bold;
-  padding: 5px 10px 5px 10px;
+  padding: var(--padding);
 }
-
 
 .novena-div
 {
 padding: 20px;
 display: flex;
 justify-content: center;
-}
 
-.novena-div iframe
+iframe
 {
   flex: 1;
   max-width: 900px;
  border-radius: var(--borderRadius);
  height: 500px;
 }
+}
 
-
-@media (max-width:500px) {
-  .novena-div iframe
+@media (max-width:500px) 
 {
- 
- 
- height: 250px;
-}
+  .novena-div iframe
+{ height: 250px; } 
 
-  
 }
-
 
 /* home CSS ends here */
 
-
-
-
-
 /* comittee css starts here */
 
-
 .committee-box
-{
-  text-align: center;
-}
+{ text-align: center; }
 
 .committee-name
 {
-  
   background-color:   #2f586e ;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -175,7 +124,6 @@ font-size: 30px;
  padding: 10px 20px;
  color: white;
  font-weight: 900;
-
 }
 
 .group-pic
@@ -188,17 +136,10 @@ font-size: 30px;
 }
 
 .group-comittee
-{
- text-align: center;
- 
-}
+{  text-align: center; }
 
-
-.group-pic:hover{
-  border: 4px solid #ffd700;
-}
-
-
+.group-pic:hover,.member-box:hover{
+  border: 4px solid #ffd700; }
 
 .main-members-box
 {
@@ -206,45 +147,29 @@ font-size: 30px;
   flex-wrap: wrap;
  justify-content: center;
   gap:15px;
-  margin: 0px 0px 10px 0px;
+  margin: 20px 0px ;
   
 }
 
 .member-box{
   background-color: #e8ca82;
-  margin-top: 10px;
+  margin-top: 10px 0px;
   border: 4px solid transparent;
-  margin-bottom: 10px;
-  padding: 10px 10px 0px 10px;
+  padding: var(--padding);
   border-radius: var(--borderRadius);
-  transition: transform 0.4s ease;
 
   img
   {
     width: 150px;
-  border-radius: 2px;
+  border-radius: var(--borderRadius);
  height: 210px;
- border-radius: var(--borderRadius);
   }
 }
-
-.member-box:hover,.member-box:active{
-   border: 4px solid #ffd700;
-   transform: scale(1.1);
-}
-
-
-
 
 /* comittee ends here  */
 
 
-
 /* gallery start */
-
-
-
-
 
 .event-box { 
   display: grid;
@@ -267,12 +192,9 @@ font-size: 30px;
   color: white;
   border: none;
   font-size: 20px;
-  padding: 5px 0px;
+  padding: var(--padding);
   width: 100%;
 }
-
-
-
 
 .event-box
 {
@@ -286,7 +208,6 @@ font-size: 30px;
 
 /* chapel start  */
 
-
 .all-chapel-main-box
 {
   display: flex;
@@ -298,30 +219,17 @@ font-size: 30px;
 .chapel-name
 {
    border: none;
-
     background-color: #2f586e;
     color: white;
   text-align: center;
   width: 100%;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 30px;
   max-width: 390px;
   margin-bottom: 10px;
   font-weight: bold;
   margin-top: 0px;
   padding: 5px 0px;
- 
 }
-
-
-
-
-
-
-
-
-
-
 
 .chapel-pic
 {
@@ -332,18 +240,15 @@ font-size: 30px;
   max-height: 500px;
 }
 
-
 .chapel-pic:hover
 {
   border: 4px solid  #ffd700;
 }
 
-
-
-
 .chapel-box{
   max-width: 400px;
   width :100%;
+  text-align: center;
 }
 
 .location-link
@@ -353,10 +258,7 @@ font-size: 30px;
   text-align: center;
   font-weight: bold;
   color: purple;
-}
-.link
-{
-  text-align: center;
+  margin: 0px auto;
 }
 
 .chapel-name2
@@ -377,41 +279,26 @@ font-size: 30px;
   
 }
 
-
-
-
-
 .link2
 {
   text-align: center;
-  margin-top: 0px;
   padding-bottom: 5px;
 }
 
 .feastDate
-{
-  text-align: center;
+{ text-align: center; }
 
-}
-
-.date{
-
-  font-weight: 700;
-}
-
+.date
+{ font-weight: 700; }
 
 /*  chapel end */
 
-
-
-
 /* history start */
-
 
 .mainContents
 {
   background-color: #0d1f2d;
-  padding: 50px 10px;
+  padding: var(--padding) 10px;
   display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   column-gap: 10px;
@@ -420,7 +307,6 @@ font-size: 30px;
   margin: 10px;
 }
 
-
 .h1{
   background-color: #2f586e;
   color: black;
@@ -428,69 +314,42 @@ font-size: 30px;
   margin-top: 10px;
 }
 
-
 .htitle
 {
-
   margin-bottom: 20px;
-  border: none;
   background-color: #2f586e;
   color: white;
-  padding: 20px; /* for content spacing */
+  padding: 20px;
 }
-
-
-
 
 .profilePic
 {
   width: 150px;
   height:auto;
-  display:inline;
   border-radius: var(--borderRadius);
 }
 
-
 .priest-div
 {
-
 max-width: 250px;
 width: 100%;
 min-height: 250px;
 border-radius: var(--borderRadius);
 background-color:#e8ca82 ;
 text-align: center;
-padding: 10px ;
+padding:var(--padding) ;
 margin: 10px;
-transition: transform 0.4s ease;
-border: 8px solid transparent;
+border: 4px solid transparent;
 }
-
 
 .priest-div:active,.priest-div:hover
-{
- transform: scale(1.08);
- border-color: #ffd700;
-}
-
-
-
-
-.details
-{
-  display: inline;
-  margin: 0px;
-}
+{ border-color: #ffd700; }
 
 .location
-{
-  color: rgb(43, 42, 42);
-}
+{ color: rgb(43, 42, 42); }
 
 .name
-{
-  font-weight: bold;
-}
+{  font-weight: bold;}
 
 .oldpics
 {
@@ -505,22 +364,11 @@ border: 8px solid transparent;
   max-width: 400px;
   height:auto;
   width: 80%;
-  transition: transform 0.3s ease-in;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: var(--borderRadius);
 }
-
-.churchImageOld:hover,.church-img:active
-{
-  transform: scale(1.1);
-}
-
-
 
 /* history end  */
-
-
-
-
 
 /* booking start */
 
@@ -530,7 +378,6 @@ border: 8px solid transparent;
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
-  padding: 10px;
 }
 
 .hallpic {
@@ -538,27 +385,13 @@ border: 8px solid transparent;
   width: 100%;
   height: auto;
   border-radius: var(--borderRadius);
-  border: 3px solid transparent;
+  border: 4px solid transparent;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, border-color 0.3s ease;
 }
-
-
 
 .hallpic:hover
-{
-  border: 4px solid #ffd700;
-}
-
-
-
-
-
-
-
+{  border-color:  #ffd700; }
 
 /* booking end */
 
-
-
-
+/* lines current  435 -35 = 400 */
