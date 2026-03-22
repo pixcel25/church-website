@@ -40,7 +40,7 @@ border: 4px solid #ffd700;
 body
 {
    background-color:#e6f0ff;
-   margin-top:250px 0px 0px 0px ;
+   margin:250px 0px 0px 0px ;
    padding: 10px 0px;
    scroll-behavior: smooth;
    font-family: "Montserrat";
