@@ -2,6 +2,11 @@
 {
   --borderRadius : 20px;
   --padding : 8px;
+  --white : white ;
+  --gold :  #BE9C51;
+  --darkBlue : #092948;
+  --clay :  #D9D9D9;
+
 }
 
 /* home CSS starts here */
@@ -27,7 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: var(--white);
   margin : 0px auto;
   flex: 1;
 }
@@ -55,7 +60,6 @@ border: 4px solid transparent;
 {
   border-radius: var(--borderRadius);
   margin-top: 10px;
-  border:2px solid black;
   max-height: 200px;
 }
 
@@ -68,17 +72,15 @@ border: 4px solid transparent;
   justify-content: center;
   padding: var(--padding);
 }
-.text-box:hover,.church-img:hover{
-border-color:  #ffd700;
-}
+
 
 .frprofile
 {
   max-height: 280px;
   text-align: center;
-  border: 5px solid transparent; 
   border-radius: var(--borderRadius);
-  background-color: #d2973b;  
+  background-color: var(--gold);  
+  color : var(--white);
   font-weight: bold;
   padding: var(--padding);
 }
@@ -114,7 +116,7 @@ iframe
 
 .committee-name
 {
-  background-color:   #2f586e ;
+  background-color:  var(--darkBlue) ;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 font-size: 30px;
@@ -152,7 +154,7 @@ font-size: 30px;
 }
 
 .member-box{
-  background-color: #e8ca82;
+  background-color: var(--gold);
   margin-top: 10px 0px;
   border: 4px solid transparent;
   padding: var(--padding);
@@ -188,12 +190,12 @@ font-size: 30px;
 }
 
 .event-title {
-  background-color: #2f586e;
+  background-color: var(--darkBlue);
   color: white;
   border: none;
   font-size: 20px;
   padding: var(--padding);
-  width: 100%;
+  width: 95%;
 }
 
 .event-box
@@ -219,16 +221,15 @@ font-size: 30px;
 .chapel-name
 {
    border: none;
-    background-color: #2f586e;
+    background-color: var(--darkBlue);
     color: white;
   text-align: center;
   width: 100%;
   font-size: 30px;
   max-width: 390px;
-  margin-bottom: 10px;
   font-weight: bold;
-  margin-top: 0px;
   padding: 5px 0px;
+  margin: 10px auto;
 }
 
 .chapel-pic
@@ -249,6 +250,9 @@ font-size: 30px;
   max-width: 400px;
   width :100%;
   text-align: center;
+  border-radius: var(--borderRadius);
+  background-color: var(--darkBlue);
+  padding: var(--padding);
 }
 
 .location-link
@@ -257,16 +261,16 @@ font-size: 30px;
   font-size:large;
   text-align: center;
   font-weight: bold;
-  color: purple;
+  color: var(--white);
   margin: 0px auto;
 }
 
 .chapel-name2
 {
    border: 5px solid none;
- color:white;
+ color:var(--white);
  padding: 10px 0px;
-    background-color:   #2f586e ;
+    background-color:   var(--darkBlue) ;
   text-align: center;
   width: 100%;
   font-family: Arial, Helvetica, sans-serif;
@@ -286,10 +290,12 @@ font-size: 30px;
 }
 
 .feastDate
-{ text-align: center; }
+{ text-align: center;
+color: var(--white); }
 
 .date
-{ font-weight: 700; }
+{ font-weight: 700; 
+color: var(--white);}
 
 /*  chapel end */
 
@@ -297,7 +303,6 @@ font-size: 30px;
 
 .mainContents
 {
-  background-color: #0d1f2d;
   padding: var(--padding) 10px;
   display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -305,11 +310,12 @@ font-size: 30px;
   place-items: center;
   border-radius: var(--borderRadius);
   margin: 10px;
+  background-color: var(--clay);
 }
 
 .h1{
-  background-color: #2f586e;
-  color: black;
+  background-color: var(--darkBlue);
+  color: var(--white);
   padding: 10px 0px;
   margin-top: 10px;
 }
@@ -317,8 +323,8 @@ font-size: 30px;
 .htitle
 {
   margin-bottom: 20px;
-  background-color: #2f586e;
-  color: white;
+  background-color: var(--darkBlue);
+  color: var(--white);
   padding: 20px;
 }
 
@@ -326,16 +332,18 @@ font-size: 30px;
 {
   width: 150px;
   height:auto;
-  border-radius: var(--borderRadius);
+  border-radius: 50%;
 }
 
 .priest-div
 {
 max-width: 250px;
 width: 100%;
+max-height: 450px;
 min-height: 250px;
+
 border-radius: var(--borderRadius);
-background-color:#e8ca82 ;
+background-color:var(--gold) ;
 text-align: center;
 padding:var(--padding) ;
 margin: 10px;
