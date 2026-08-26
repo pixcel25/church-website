@@ -1,4 +1,20 @@
-this is pomburpa demo site
+This is the Mother of God Church, Pomburpa website.
+
+## Development
+
+Install dependencies with Bun and start the Vite development server:
+
+```sh
+bun install
+bun run dev
+```
+
+Create a production build with `bun run build`.
+
+The site is built with React, Vite, and Tailwind CSS.
+
+## History
+
 V 1.0.7
 updated it to have a Booking webpage.
 
