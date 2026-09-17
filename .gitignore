@@ -1,3 +1,6 @@
+# Installed dependencies are recreated with bun install.
 node_modules
+# Vite's generated production output is not source code.
 dist
+# Ignore macOS filesystem metadata.
 .DS_Store

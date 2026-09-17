@@ -1,7 +1,11 @@
+/* Tailwind layers provide the reset, component styles, and utility classes. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Keep anchor scrolling smooth and prevent mobile layouts from causing side scroll. */
 html { scroll-behavior: smooth; }
-body { @apply m-0 bg-[#e6f0ff] font-sans text-slate-900; }
+body { @apply m-0 overflow-x-hidden bg-[#e6f0ff] font-sans text-slate-900; }
+
+/* Remove the default mobile tap flash while preserving visible hover/focus states. */
 button, a { -webkit-tap-highlight-color: transparent; }

@@ -13,6 +13,16 @@ Create a production build with `bun run build`.
 
 The site is built with React, Vite, and Tailwind CSS.
 
+## Maintenance guide
+
+- `src/main.jsx` contains the routes, shared layout components, page content, and editable church data.
+- `src/index.css` contains the global Tailwind entry layers and small global rules.
+- `public/pictures/` contains images referenced by the pages with `/pictures/...` URLs.
+- `tailwind.config.js`, `postcss.config.js`, and `vite.config.js` configure the styling and build pipeline.
+- `index.html` provides the document metadata, font loading, and React mount point.
+
+The app uses browser history for its small client-side router. Add a route to `navItems` and the route map in `App` when creating a new page.
+
 ## History
 
 V 1.0.7
