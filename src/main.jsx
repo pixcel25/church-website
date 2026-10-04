@@ -1,5 +1,6 @@
 // React runtime APIs used by the application and its client-side router.
 import { StrictMode, useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route, Link, NavLink, useLocation } from 'react-router-dom'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 
@@ -21,11 +22,7 @@ const navItems = [
   ['Booking', '/booking'],
 ]
 
-// Change routes without a full-page reload, preserving the single-page app experience.
-function navigate(path) {
-  window.history.pushState({}, '', path)
-  window.dispatchEvent(new PopStateEvent('popstate'))
-}
+
 
 function scrollToContact(event) {
   event.preventDefault()
@@ -45,21 +42,28 @@ function Header() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Build links that use the client-side router instead of browser navigation.
+  // Build links that use React Router NavLink.
   const link = (label, path) => (
-    <a
+    <NavLink
       key={path}
-      href={path}
-      onClick={(event) => { event.preventDefault(); setOpen(false); navigate(path) }}
-      className="rounded px-3 py-2 text-sm font-bold text-white transition hover:bg-white/15"
-    >{label}</a>
+      to={path}
+      end={path === '/'}
+      onClick={() => setOpen(false)}
+      className={({ isActive }) =>
+        `rounded px-3 py-2 text-sm font-bold text-white transition hover:bg-white/15 ${
+          isActive ? 'bg-white/20' : ''
+        }`
+      }
+    >
+      {label}
+    </NavLink>
   )
 
   return <header className="fixed inset-x-0 top-0 z-20 bg-white shadow-lg">
     <div className={`mx-auto flex max-w-7xl items-center justify-center gap-2 px-3 transition-all sm:gap-4 sm:px-4 ${scrolled ? 'h-14 sm:h-16' : 'h-20 sm:h-28'}`}>
-      <a href="/" onClick={(event) => { event.preventDefault(); navigate('/') }} className="shrink-0">
+      <Link to="/" className="shrink-0">
         <img src="/pictures/church-logo.jpg" alt="Mother of God Church logo" className={`rounded-full object-cover transition-all ${scrolled ? 'h-10 w-10 sm:h-12 sm:w-12' : 'h-12 w-12 sm:h-20 sm:w-20'}`} />
-      </a>
+      </Link>
       <h1 className="min-w-0 text-center text-sm font-extrabold leading-tight text-navy sm:text-2xl">Mother of God Church, Pomburpa</h1>
     </div>
     <nav className="relative border-b-4 border-gold bg-navy px-2 py-1.5 sm:px-3 sm:py-2">
@@ -110,9 +114,8 @@ function Committees() { return <Page>{members.map(([group, people]) => <section 
 function Gallery() { const events = [['5-a-side Football Tournament','DN0lyER5NAp'],['Marian Procession','DPTziZcEwCK'],['Youth Inaugural Mass','DLfIGRzyHtD'],['Our Lady of Assumption Feast','DNXP7tjzeXt'],['Grand Parents Day Celebration','DMnkAjsTq0c'],['Parish Youth','DLfaV1MSiDZ']]; return <Page><Title>Gallery</Title><div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">{events.map(([name, id]) => <Card key={id} className="p-3"><h3 className="mb-3 bg-ink p-3 text-center font-bold text-white">{name}</h3><a href={`https://www.instagram.com/reel/${id}/`} target="_blank" rel="noreferrer" className="block bg-white p-6 text-center text-navy underline">View event on Instagram</a></Card>)}</div></Page> }
 function Chapels() { const chapels = [['St Sebastian Chapel','stseb.jpg','4 February','https://maps.app.goo.gl/wByRYTizieFFNtsq9'],['Nossa Senhora de Boa Viagem','chapel2.jpg','3 February','https://maps.app.goo.gl/9dnpbyJB6oh98NQi8'],['St Augustias Chapel','augtias.jpg','16 October','https://maps.app.goo.gl/DFqajLC9NDzDq4KU7']]; return <Page><Title>Chapels</Title><div className="flex flex-wrap justify-center gap-6">{chapels.map(([name, image, feast, location]) => <Card key={name} className="w-full max-w-sm p-0 pb-5 text-center"><h3 className="flex h-24 items-center justify-center bg-ink px-4 text-xl font-bold leading-tight text-white">{name}</h3><img src={`/pictures/${image}`} alt={name} className="h-72 w-full object-cover" /><p className="my-3"><b>Feast:</b> {feast}</p><a href={location} target="_blank" rel="noreferrer" className="font-bold text-purple-800 underline">Location</a></Card>)}</div></Page> }
  function Booking() { return <Page><Title>Hall Booking</Title><div className="flex flex-wrap justify-center gap-5">{['hallpic1.jpg','hallpic2.jpg','hallpic3.jpg'].map((image) => <img key={image} src={`/pictures/${image}`} alt="Pomburpa hall" className="w-full max-w-sm rounded-2xl shadow-lg" />)}</div><Card className="mt-8 text-lg leading-relaxed"><b>Welcome to Pomburpa hall – The Perfect Venue for Every Celebration</b><br /><br />At Pomburpa, we believe every occasion deserves to be truly unforgettable. Our elegant party hall offers the perfect blend of style, comfort, and functionality, making it an ideal venue for birthdays, weddings, anniversaries, corporate gatherings, and special social events.<br /><br />Designed with spacious interiors and a warm ambiance, the hall can be customized to suit your theme and requirements. With modern décor, adjustable lighting, and flexible seating arrangements, we create the perfect atmosphere for both intimate gatherings and grand celebrations.<br /><br />Our venue is fully equipped with state-of-the-art sound and lighting systems to keep the energy alive throughout your event. A dedicated stage and dance floor add a lively touch, ensuring entertainment and joy for every guest. For added convenience, we provide ample parking, clean restrooms, and easy accessibility.<br /><br />At Pomburpa hall, we pride ourselves on attention to detail and exceptional service.<br /><br />Celebrate life’s most special moments in a space where memories are made. Book pomburpa hall today and let us turn your celebration into a truly remarkable experience. For more details contact us.</Card></Page> }
-function History() { const oldPics = Array.from({ length: 10 }, (_, index) => `c${index + 1}.jpg`); return <Page><Title>Church Archives</Title><div className="flex flex-wrap justify-center gap-4">{oldPics.map((image) => <img key={image} src={`/pictures/${image}`} alt="Church archive" className="w-full max-w-xs rounded-lg shadow-lg transition hover:scale-105" />)}</div><Title>Chapels of Pomburpa</Title><Card className="mb-6 leading-relaxed"><b>Boa Viagem Kopel (Chapel of Our Lady of Good Journey)</b><br />1500 meters in distance is the chapel of Boa Viagem in the Palmar waddo. This chapel was blessed on 10th May 1938 and stands on the bank of the river. The center altar holds the statue of Our Lady of Good Journey, with St. Francis Xavier and St. Sebastian beside it.<br /><br /><b>Sant Sebastiao Kopel (Chapel of St. Sebastian)</b><br />This chapel lies in Morodd waddo, 3500 meters away from the church. The village was given permission to celebrate this saint’s feast from 26th January 1913.<br /><br /><b>Augustias Kopel</b><br />The chapel is in Golna Waddo, 2,600 meters away from the church. The present chapel was blessed on 6th November 1897 and renovated in 1980.</Card><Title>The Village Church And Its History</Title><Card className="leading-relaxed"><b>The Beginning</b><br />The Church of Our Lady of Candeia sits imposingly on a hillside overlooking the Mapusa river. Records state that there were seven temples in Pompurpa in the past. Christianity spread through the region and reached Pompurpa before 1590. According to historical records, the Pompurpa Church was established in 1590 and the parish originally comprised Pompurpa and Olaulim.</Card><Title>Parish Priests</Title><div className="flex flex-wrap justify-center gap-5">{[['san.jpg','Late Fr. Santana Carvalho','2005-2012'],['diago.jpg','Late Fr. Agnelo Diogo Francisco Tome Baptisa De Souza','2012-2019'],['george.jpg','Fr. George Norbert Aguier','2019-2025'],['fr-pic.png','Fr. Agnelo Rodrigues','2025-present']].map(([image, name, years]) => <Card key={name} className="w-64 text-center"><img src={`/pictures/${image}`} alt={name} className="mx-auto h-44 w-36 rounded-xl object-cover" /><p className="mt-3 font-bold">{name}</p><p>Parish priest from {years}</p></Card>)}</div></Page> }
 
-function App() { const [path, setPath] = useState(window.location.pathname); useEffect(() => { const onPopState = () => { setPath(window.location.pathname); window.scrollTo(0, 0) }; window.addEventListener('popstate', onPopState); return () => window.removeEventListener('popstate', onPopState) }, []); const PageComponent = { '/': Home, '/committees': Committees, '/gallery': Gallery, '/chapels': Chapels, '/history': DetailedHistory, '/booking': Booking }[path] || Home; return <PageComponent /> }
+
 
 // Full historical descriptions restored from the original main branch page.
 function DetailedHistory() {
@@ -167,4 +170,85 @@ function DetailedHistory() {
 }
 
 // Mount the application into the root element created in index.html.
-createRoot(document.getElementById('root')).render(<StrictMode><App /></StrictMode>)
+// Scroll to top on route change so new pages always start at the top.
+function ScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.scrollTo(0, 0)
+    }
+  }, [pathname])
+
+  return null
+}
+
+// 404 Not Found page shown when visiting an unmapped route.
+function NotFound() {
+  return (
+    <Page>
+      <Title>Page Not Found</Title>
+      <Card className="mx-auto max-w-xl text-center">
+        <p className="text-4xl font-extrabold text-navy">404</p>
+        <p className="mt-4 text-lg leading-relaxed text-navy">
+          The page you are looking for does not exist or may have been moved.
+        </p>
+        <div className="mt-6">
+          <Link
+            to="/"
+            className="inline-block rounded-xl bg-navy px-6 py-3 font-bold text-white transition hover:bg-navy/80 hover:text-gold"
+          >
+            Return to Home
+          </Link>
+        </div>
+      </Card>
+    </Page>
+  )
+}
+
+function App() {
+  return (
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/home.html" element={<Home />} />
+        <Route path="/committees" element={<Committees />} />
+        <Route path="/committee" element={<Committees />} />
+        <Route path="/committee.html" element={<Committees />} />
+        <Route path="/committees.html" element={<Committees />} />
+        <Route path="/Committee.html" element={<Committees />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/gallery.html" element={<Gallery />} />
+        <Route path="/Gallery.html" element={<Gallery />} />
+        <Route path="/chapels" element={<Chapels />} />
+        <Route path="/chapels.html" element={<Chapels />} />
+        <Route path="/Chapels.html" element={<Chapels />} />
+        <Route path="/history" element={<DetailedHistory />} />
+        <Route path="/history.html" element={<DetailedHistory />} />
+        <Route path="/History.html" element={<DetailedHistory />} />
+        <Route path="/booking" element={<Booking />} />
+        <Route path="/booking.html" element={<Booking />} />
+        <Route path="/Booking.html" element={<Booking />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
+  )
+}
+
+// Mount the application into the root element created in index.html.
+const rootElement = typeof document !== 'undefined' ? document.getElementById('root') : null
+if (rootElement) {
+  createRoot(rootElement).render(
+    <StrictMode>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </StrictMode>
+  )
+}
+
+export default App
+export { App, Home, Committees, Gallery, Chapels, DetailedHistory, Booking, NotFound, ScrollToTop }
+
